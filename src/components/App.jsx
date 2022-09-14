@@ -1,19 +1,18 @@
-import Section from './Section';
-import ProfileMarkup from './Profile/ProfileMarkup';
-import FriendItem from './FriendList/FriendItem';
+import {ProfileMarkup} from './Profile/ProfileMarkup';
 
-import user from '../components/user.json';
-import friends from '../components/friends.json';
+import {Statistics} from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
+
+import user from '../components/Profile/user.json';
+import data from '../components/Statistics/data.json';
+import friends from '../components/FriendList/friends.json';
 
 export const App = () => {
   return (
     <div>
-      <Section title="Profile">
       <ProfileMarkup user={user}/>
-      </Section>
-      <Section title="Friends">
-      <FriendItem friends={friends} />
-      </Section>
+      <Statistics data={data} />
+      <FriendList friends={friends} />
     </div>
   )
 }

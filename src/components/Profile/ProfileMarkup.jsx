@@ -1,7 +1,7 @@
-import Profile from "./Profile";
-import user from '../user.json';
+import {Profile} from "./Profile";
+import user from './user.json';
 
-function ProfileMarkup () {
+export function ProfileMarkup () {
     return (
         <div>
             <Profile 
@@ -16,5 +16,3 @@ function ProfileMarkup () {
         </div>
     )
 }
-
-export default ProfileMarkup;

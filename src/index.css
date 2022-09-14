@@ -7,9 +7,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e1e7ee;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+:root {
+  --color1: blueviolet;
+  --color2: violet;
+  --color3: tomato;
+  --color4: turquoise;
+  --color5: #8793a2;
+  --color6: mediumseagreen;
+  --color7: orangered;
 }
